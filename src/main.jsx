@@ -6,6 +6,7 @@ import Contact from "./components/contact/Contact.jsx";
 import Home from "./components/home/Home.jsx";
 import Main from "./components/layout/Main.jsx";
 import Orders from "./components/orders/Orders.jsx";
+import Shop from "./components/shop/Shop.jsx";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -22,15 +23,23 @@ const router = createBrowserRouter([
           ),
       },
       {
+        path: "/shop",
+        element: <Shop />,
+        loader: () =>
+          fetch(
+            "https://raw.githubusercontent.com/ProgrammingHero1/t-shirt-data/main/tshirt.json"
+          ),
+      },
+      {
         path: "/orders",
         element: <Orders />,
       },
       {
-        path: "about",
+        path: "/about",
         element: <About />,
       },
       {
-        path: "contact",
+        path: "/contact",
         element: <Contact />,
       },
     ],
