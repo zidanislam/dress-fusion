@@ -4,7 +4,7 @@ const useProductsApi = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     fetch(
-      "https://raw.githubusercontent.com/ProgrammingHero1/t-shirt-data/main/tshirt.json"
+      "products.json"
     )
     .then((res) => res.json())
     .then(data=> setProducts(data))
