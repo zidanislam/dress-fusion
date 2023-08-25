@@ -4,7 +4,7 @@ import "./header.css";
 
 const Header = () => {
   return (
-    <nav className="2xl:my-16 xl:my-10 flex justify-evenly">
+    <nav className="2xl:my-16 xl:my-10 flex justify-around">
       <img
         className="w-44"
         src="https://i.ibb.co/RjzHvh3/DRESS.png"
