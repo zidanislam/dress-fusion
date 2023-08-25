@@ -1,0 +1,12 @@
+.size {
+  font-size: 128px;
+}
+@media (min-width: 1536px) {
+  .size {
+    font-size: 176px;
+    text-align: center;
+  }
+  .hero-head {
+    font-size: 91px;
+  }
+}
