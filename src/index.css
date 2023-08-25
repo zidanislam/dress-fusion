@@ -10,12 +10,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.text-stroke {
-  -webkit-text-stroke: 1px black; /* WebKit browsers */
-  text-stroke: 1px black; /* Standard syntax */
-  -webkit-text-fill-color: transparent;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
