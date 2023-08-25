@@ -3,7 +3,7 @@ import "./hero.css";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-3 gap-9 mx-auto 2xl:px-80 xl:px-32 mb-2">
+    <div className="grid grid-cols-3 gap-9 mx-auto 2xl:px-80 xl:px-32 mb-6">
       <div className="2xl:w-96 xl:w-80 2xl:ml-2 xl:ml-6 2xl:pt-48 xl:pt-32 rounded-xl bg-gray-300">
         <img src="https://i.ibb.co/KGxFdyR/hero-l-img.png" alt="" />
       </div>
