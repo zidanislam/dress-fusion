@@ -5,7 +5,7 @@ const InstaFeed = () => {
   return (
     <>
       <div className="2xl:my-20 xl:my-16">
-        <h2 className="heading text-center">Follow Us On Instagram</h2>
+        <h2 className="heading xl:text-4xl my-5 text-center">Follow Us On Instagram</h2>
         <p className="text-center text-base text-gray-600">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
           duis
