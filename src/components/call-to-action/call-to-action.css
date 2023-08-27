@@ -1,0 +1,24 @@
+.skewed-box {
+  width: 100%;
+  height: 570px;
+  display: flex;
+}
+
+.imagebox {
+  width: calc(50%);
+}
+
+.text {
+  width: calc(50%);
+  height: 100%;
+  background: #dadada;
+  border-left: 110px solid #f3f4f6;
+  border-bottom: 570px solid transparent;
+}
+.heading {
+  font-size: 46px;
+}
+.price {
+  font-size: 28px;
+  font-weight: 500;
+}
