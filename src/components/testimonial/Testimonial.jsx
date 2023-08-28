@@ -4,9 +4,6 @@ import "swiper/css/bundle";
 import "swiper/css/effect-coverflow";
 import { register } from "swiper/element/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
-import slide1 from "./../../img/card (1).png";
-import slide2 from "./../../img/card (2).png";
-import slide3 from "./../../img/card.png";
 import "./testimonial.css";
 register();
 
@@ -36,13 +33,13 @@ const Testimonial = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={slide1} className="my-coverflow-slide" />
+          <img src="https://i.ibb.co/tCznTYC/card.png" className="my-coverflow-slide" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide2} className="my-coverflow-slide" />
+          <img src="https://i.ibb.co/d5MBpK1/card-2.png" className="my-coverflow-slide" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={slide3} className="my-coverflow-slide" />
+          <img src="https://i.ibb.co/whQk7y1/card-3.png" className="my-coverflow-slide" />
         </SwiperSlide>
       </Swiper>
     </>
