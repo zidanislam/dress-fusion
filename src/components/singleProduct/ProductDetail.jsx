@@ -1,16 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useProductsContext } from "../../context/productContext";
+import useProducts from "../../hooks/useProductsApi";
 
 const ProductDetail = () => {
   const { productId } = useParams();
   const[product, setProduct] = useState({})
-  const { products } = useProductsContext();
+  const {products} = useProducts()
   useEffect(()=>{
-    const selectedProduct = products.find((product) => product._id === productId);
-    setProduct(selectedProduct)
-  },[productId])
-  console.log(product)
+    console.log({products})
+      const selectedProduct = products.find((product) => product._id === productId);
+      setProduct(selectedProduct)
+  },[products, productId])
+
+  if(!product){
+    return <div>not found</div>
+  }
+  
   const {name, price, description, sizes, category, gellary, ratings, reviews, stock} = product;
 
   return (
