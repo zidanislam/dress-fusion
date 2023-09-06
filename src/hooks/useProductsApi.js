@@ -7,12 +7,10 @@ const useProducts = () => {
     fetch("/products.json")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
         setProducts(data);
       });
   }, []);
 
-  console.log(products)
   return {products};
 };
 

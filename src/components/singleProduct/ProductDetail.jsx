@@ -7,7 +7,6 @@ const ProductDetail = () => {
   const[product, setProduct] = useState({})
   const {products} = useProducts()
   useEffect(()=>{
-    console.log({products})
       const selectedProduct = products.find((product) => product._id === productId);
       setProduct(selectedProduct)
   },[products, productId])

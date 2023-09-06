@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { useProductsContext } from "../../context/productContext";
+import useProducts from "../../hooks/useProductsApi";
 import Product from "../product/Product";
 
 const Shop = () => {
-  const {isLoading, products} = useProductsContext();
+  const { products } = useProducts();
   const [cart, setCart] = useState([]);
   const addToCart = (product) => {
     const newCart = [...cart, product];

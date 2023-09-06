@@ -10,7 +10,6 @@ import Orders from "./components/orders/Orders.jsx";
 import ScrollTop from "./components/scrollToTop/ScrollTop.jsx";
 import Shop from "./components/shop/Shop.jsx";
 import ProductDetail from "./components/singleProduct/ProductDetail.jsx";
-import { AllProductsProvider } from "./context/productContext.jsx";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -49,10 +48,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <AllProductsProvider>
       <RouterProvider router={router} />
       <CartIcon />
       <ScrollTop />
-    </AllProductsProvider>
   </React.StrictMode>
 );
