@@ -2,57 +2,1597 @@
   {
     "_id": "623853b2614ad5aba311fdd1",
     "index": 0,
-    "price": 14,
-    "picture": "https://i.pinimg.com/originals/9f/3d/13/9f3d13912d3cf78e4c87975bcebc1fee.jpg",
-    "name": "Just Chill",
-    "gender": "Just Chill"
+    "price": 9.99,
+    "picture": "https://i.ibb.co/BzSJv5V/black-t-shirt-female-2.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/1K2WHTm/black-t-shirt-female-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/BzSJv5V/black-t-shirt-female-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/HqFxzLT/black-t-shirt-female-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/6F64mHg/black-t-shirt-female-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Black-T",
+    "gender": "female",
+    "colors": ["#000"],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "female",
+    "quantity": 0,
+    "featured": true,
+    "shipping": true,
+    "stock": 35,
+    "ratings": 4.5,
+    "reviews": 235
+  },
+  {
+    "_id": "f3c14e872b9a06d5185b32e7",
+    "index": 1,
+    "price": 34.99,
+    "picture": "https://i.ibb.co/g4t1kyp/men-jacket-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/g4t1kyp/men-jacket-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/DCB6f3S/men-jacket-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/kSS6DNv/men-jacket-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/0nkRp6X/men-jacket-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Leather Jacket",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["L", "XL", "2XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "men",
+    "featured": false,
+    "shipping": true,
+    "stock": 8,
+    "ratings": 4.6,
+    "reviews": 25
+  },
+  {
+    "_id": "69b5f1a0c72e8d3487b021d6",
+    "index": 2,
+    "price": 9.99,
+    "picture": "https://i.ibb.co/s5L707h/Kid-s-Track-Suit-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/s5L707h/Kid-s-Track-Suit-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/rpndH3m/Kid-s-Track-Suit-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/GTG59JT/Kid-s-Track-Suit-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/YfgBzmQ/Kid-s-Track-Suit-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Track Suit",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["XS", "S"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "kids",
+    "featured": false,
+    "shipping": true,
+    "stock": 35,
+    "ratings": 4.5,
+    "reviews": 235
   },
   {
     "_id": "623853b2578e9e6ad1ae0dd5",
-    "index": 1,
-    "picture": "https://render.fineartamerica.com/images/rendered/default/t-shirt/23/30/images/artworkimages/medium/1/coffee-coding-syntax-aadil-farooq-transparent.png?targetx=0&targety=0&imagewidth=430&imageheight=516&modelwidth=430&modelheight=575",
-    "name": "Keep Coding",
-    "price": 27,
-    "gender": "Keep Coding"
+    "index": 3,
+    "price": 29.99,
+    "picture": "https://i.ibb.co/R9z5FDq/fancy-female-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/R9z5FDq/fancy-female-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/3syNbWR/fancy-female-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/yNMPZ41/fancy-female-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Fancy Lace",
+    "gender": "female",
+    "colors": ["#000"],
+    "sizes": ["S", "M", "XL", "2XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "female",
+    "quantity": 0,
+    "featured": false,
+    "shipping": true,
+    "stock": 24,
+    "ratings": 4.8,
+    "reviews": 35
+  },
+  {
+    "_id": "670b18d3a2e9c45f71f8e26b",
+    "index": 4,
+    "price": 44.99,
+    "picture": "https://i.ibb.co/LpQJ3CS/men-jacket-var-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/LpQJ3CS/men-jacket-var-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/Bn2C4L7/men-jacket-var-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/KqTd53R/men-jacket-var-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Jacket",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["M", "L", "XL", "2XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "men",
+    "featured": false,
+    "shipping": true,
+    "stock": 7,
+    "ratings": 4.8,
+    "reviews": 45
   },
   {
     "_id": "623853b21fb149d2ee7b76c7",
-    "index": 2,
-    "picture": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dCUyMHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    "name": "Black",
-    "price": 24,
-    "gender": ""
+    "index": 5,
+    "price": 52.95,
+    "picture": "https://i.ibb.co/BctJTSX/fancy-prom-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/BctJTSX/fancy-prom-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/pwvX8wM/fancy-prom-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/c8kcs8m/fancy-prom-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/nrp53st/fancy-prom-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Prom Dress",
+    "gender": "female",
+    "colors": ["#000"],
+    "sizes": ["XS", "S", "M", "L"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "female",
+    "quantity": 0,
+    "featured": true,
+    "shipping": true,
+    "stock": 4,
+    "ratings": 4.8,
+    "reviews": 35
   },
   {
     "_id": "623853b2e91c8de578c9245e",
-    "index": 3,
-    "picture": "https://5.imimg.com/data5/SH/GC/MY-8764775/mens-t-shirt-500x500.jpg",
-    "name": "Mix Yellow",
-    "price": 14,
-    "gender": "Mix Yellow"
+    "index": 6,
+    "price": 15.78,
+    "picture": "https://i.ibb.co/1sPfg3K/jacket-women-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/1sPfg3K/jacket-women-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/Fk1N1vp/jacket-women-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/ZfvRvR3/jacket-women-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/y4ST6s0/jacket-women-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Blue Jacket",
+    "gender": "female",
+    "colors": ["#000"],
+    "sizes": ["S", "M", "L", "2XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "female",
+    "quantity": 0,
+    "featured": true,
+    "shipping": true,
+    "stock": 32,
+    "ratings": 4.7,
+    "reviews": 25
+  },
+  {
+    "_id": "b4e68f1d57c2a239be2038d4",
+    "index": 7,
+    "price": 4.99,
+    "picture": "https://i.ibb.co/cCNfCHs/Full-outfit-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/cCNfCHs/Full-outfit-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/BnwnkFZ/Full-outfit-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/VBzcpfc/Full-outfit-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Full Set",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["XS", "S"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "kids",
+    "featured": false,
+    "shipping": true,
+    "stock": 35,
+    "ratings": 4.5,
+    "reviews": 35
   },
   {
     "_id": "623853b2239582e48409ccc6",
-    "index": 4,
-    "price": 34,
-    "picture": "https://www.billbazar.com.bd/public/uploads/all/8hgD0lQGODVXbB5sokhvwr7mUNjBx7pEHusuyGZj.webp",
-    "name": "Bachelor",
-    "gender": "male"
+    "index": 8,
+    "price": 5.95,
+    "picture": "https://i.ibb.co/Pmnxb9m/women-t-shirt-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/Pmnxb9m/women-t-shirt-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/bFJwKVZ/women-t-shirt-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/L8y0xxg/women-t-shirt-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/7CnVG8N/women-t-shirt-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Black-T with Sticker",
+    "gender": "female",
+    "colors": ["#000"],
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "female",
+    "quantity": 0,
+    "featured": false,
+    "shipping": true,
+    "stock": 8,
+    "ratings": 5.0,
+    "reviews": 38
   },
   {
     "_id": "623853b2cdda0d5bc294f791",
-    "index": 5,
-    "picture": "https://m.media-amazon.com/images/I/61GMJ+3ekAS._AC_UL320_.jpg",
-    "name": "Right Price",
-    "price": 141,
-    "gender": "male"
+    "index": 9,
+    "price": 49.95,
+    "picture": "https://i.ibb.co/02Qkwcg/female-overcoat-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/02Qkwcg/female-overcoat-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/Z8RDYR5/female-overcoat-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/cCg16GF/female-overcoat-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/s63b9sn/female-overcoat-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Overcoat",
+    "gender": "female",
+    "colors": ["#000"],
+    "sizes": ["L", "XL", "2XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "female",
+    "quantity": 0,
+    "featured": true,
+    "shipping": true,
+    "stock": 42,
+    "ratings": 4.2,
+    "reviews": 56
+  },
+  {
+    "_id": "d5e79a0f13c8628b64b2f1c9",
+    "index": 10,
+    "price": 14.99,
+    "picture": "https://i.ibb.co/6HNMvdX/blue-shirt-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/6HNMvdX/blue-shirt-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/WPNC14H/blue-shirt-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/xDvY7Nr/blue-shirt-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/54f1nZp/blue-shirt-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Blue Shirt",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["L", "XL", "2XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "men",
+    "featured": false,
+    "shipping": true,
+    "stock": 25,
+    "ratings": 4.5,
+    "reviews": 52
   },
   {
     "_id": "623853b2736f19fd4eb8d44a",
-    "index": 6,
-    "price": 41,
-    "picture": "https://i.pinimg.com/236x/af/96/95/af9695e0116a1d859336024e6cdcea10.jpg",
-    "name": "Black Skull",
-    "gender": "female"
+    "index": 11,
+    "price": 5.95,
+    "picture": "https://i.ibb.co/n7GryZZ/female-casual-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/n7GryZZ/female-casual-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/tJd0P5c/female-casual-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/TtHHFnD/female-casual-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/9gFymzH/female-casual-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Casual Office Outfit",
+    "gender": "female",
+    "colors": ["#000"],
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "female",
+    "quantity": 0,
+    "featured": true,
+    "shipping": true,
+    "stock": 12,
+    "ratings": 4.6,
+    "reviews": 68
+  },
+  {
+    "_id": "8a9e2d1c64b307f59d76881b",
+    "index": 12,
+    "price": 59.99,
+    "picture": "https://i.ibb.co/7z98n2S/overcoat-men-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/7z98n2S/overcoat-men-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/2jG3G5g/overcoat-men-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/7vqhZZT/overcoat-men-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Overcoat",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["M", "L", "XL", "2XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "men",
+    "featured": true,
+    "shipping": true,
+    "stock": 5,
+    "ratings": 4.7,
+    "reviews": 35
+  },
+  {
+    "_id": "238b5c764ed0a9711f69e2b8",
+    "index": 13,
+    "price": 19.99,
+    "picture": "https://i.ibb.co/HKbVG0r/white-shirt-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/HKbVG0r/white-shirt-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/TBcHwyF/white-shirt-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/XDpvYKR/white-shirt-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/t47xqFM/white-shirt-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "White Shirt",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["L", "XL", "2XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "men",
+    "featured": true,
+    "shipping": true,
+    "stock": 28,
+    "ratings": 4.7,
+    "reviews": 58
+  },
+  {
+    "_id": "9f6c810d4b7a2e5b38e11394",
+    "index": 14,
+    "price": 4.99,
+    "picture": "https://i.ibb.co/6m82dXK/black-t-shirt-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/6m82dXK/black-t-shirt-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/0QQ1Bbt/black-t-shirt-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Black T-shirt",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["M", "L", "XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "men",
+    "featured": true,
+    "shipping": true,
+    "stock": 70,
+    "ratings": 4.9,
+    "reviews": 55
+  },
+  {
+    "_id": "35d8f2b1c4e7a9d062e09b78",
+    "index": 15,
+    "price": 3.99,
+    "picture": "https://i.ibb.co/HY4LrmT/picnic-outfit-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/HY4LrmT/picnic-outfit-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/cydM0jk/picnic-outfit-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/WsSSXpd/picnic-outfit-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/8DQHjtk/picnic-outfit-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Picnic Outfit",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "kids",
+    "featured": false,
+    "shipping": true,
+    "stock": 30,
+    "ratings": 4.9,
+    "reviews": 23
+  },
+  {
+    "_id": "16eaf2d3c9b0485877b51d6a",
+    "index": 16,
+    "price": 6.99,
+    "picture": "https://i.ibb.co/fvth0y1/full-sleeve-shirt-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/fvth0y1/full-sleeve-shirt-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/Xywt9n8/full-sleeve-shirt-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/DKWtt7v/full-sleeve-shirt-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Full sleeve Black Shirt",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["M", "L", "XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "men",
+    "featured": true,
+    "shipping": true,
+    "stock": 60,
+    "ratings": 4.4,
+    "reviews": 53
+  },
+  {
+    "_id": "e1f597d6c2b3804a1e186b5f",
+    "index": 17,
+    "price": 7.99,
+    "picture": "https://i.ibb.co/QvcdqJS/red-frock-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/QvcdqJS/red-frock-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/XVqbVQn/red-frock-4.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/YbGVMRH/red-frock-2.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/hmwvJ8g/red-frock-3.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Red Frock",
+    "gender": "female",
+    "colors": ["#000"],
+    "sizes": ["XS", "S"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "kids",
+    "featured": true,
+    "shipping": true,
+    "stock": 30,
+    "ratings": 4.9,
+    "reviews": 335
+  },
+  {
+    "_id": "0b28d5c9f1a37e6b6b4e58a2",
+    "index": 18,
+    "price": 6.99,
+    "picture": "https://i.ibb.co/99xpW97/Tops-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/99xpW97/Tops-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/Q9nM7yq/Tops-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Tops",
+    "gender": "female",
+    "colors": ["#000"],
+    "sizes": ["XS", "S", "M"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "kids",
+    "featured": false,
+    "shipping": true,
+    "stock": 5,
+    "ratings": 4.6,
+    "reviews": 25
+  },
+  {
+    "_id": "c872bf30e1d94a6b58e5271f",
+    "index": 19,
+    "price": 4.99,
+    "picture": "https://i.ibb.co/Db2HL3r/bao-bao-ml-KE8d-EMc-8-unsplash.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/Db2HL3r/bao-bao-ml-KE8d-EMc-8-unsplash.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/yVjrz2t/bao-bao-RYq-L5hec-EJo-unsplash.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/cXJsmYs/bao-bao-Tys-Fv-Ol78u0-unsplash.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/TRFQwBD/main.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid5",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/dQFG4ZG/main-black.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "B&W T-Shirt",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "men",
+    "featured": true,
+    "shipping": true,
+    "stock": 69,
+    "ratings": 4.8,
+    "reviews": 63
+  },
+  {
+    "_id": "4e7f1c36d9a582b2b0a0e81c",
+    "index": 20,
+    "price": 9.99,
+    "picture": "https://i.ibb.co/BzRKhc4/sweat-shirt-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/BzRKhc4/sweat-shirt-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/gdRQHGn/sweat-shirt-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Sweat-Shirt",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["M", "L", "XL", "2XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "men",
+    "featured": true,
+    "shipping": true,
+    "stock": 19,
+    "ratings": 4.6,
+    "reviews": 73
+  },
+  {
+    "_id": "a523b7d49c8f01e2b611f674",
+    "index": 21,
+    "price": 4.99,
+    "picture": "https://i.ibb.co/02RtCG6/blac-brand-t-shirt-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/02RtCG6/blac-brand-t-shirt-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/K6PrZqM/blac-brand-t-shirt-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/GsgX0vc/blac-brand-t-shirt-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/wp220LM/blac-brand-t-shirt-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Black T-Shirt",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["M", "L"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "men",
+    "featured": false,
+    "shipping": true,
+    "stock": 29,
+    "ratings": 4.8,
+    "reviews": 83
+  },
+  {
+    "_id": "8d163e9f7b2c54a0b5187a3e",
+    "index": 22,
+    "price": 4.99,
+    "picture": "https://i.ibb.co/QKYb5y5/White-t-shirt-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/QKYb5y5/White-t-shirt-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/MMsxcpk/White-t-shirt-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/QHmDDZd/White-t-shirt-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/WxtLD9S/White-t-shirt-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "White T-Shirt",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["XS", "M", "L", "XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "men",
+    "featured": false,
+    "shipping": true,
+    "stock": 49,
+    "ratings": 4.9,
+    "reviews": 86
+  },
+  {
+    "_id": "1a0c2e6b5b7d43f8f9d1e28c",
+    "index": 23,
+    "price": 7.99,
+    "picture": "https://i.ibb.co/StkLjrR/trendy-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/StkLjrR/trendy-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/LgDxTNL/trendy-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/qF7bJkS/trendy-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/jRtffKv/trendy-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Trendy Fashion",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["M", "L", "XL", "2XL"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "men",
+    "featured": false,
+    "shipping": true,
+    "stock": 39,
+    "ratings": 4.6,
+    "reviews": 56
+  },
+  {
+    "_id": "72b3c5e4a8f1d06e9b7d84f2",
+    "index": 24,
+    "price": 7.99,
+    "picture": "https://i.ibb.co/2jFtJqS/Orange-frock-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/2jFtJqS/Orange-frock-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/FVvg2Z3/Orange-frock-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/98LcH9P/Orange-frock-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/RjNv6Dz/Orange-frock-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Orange Frock",
+    "gender": "female",
+    "colors": ["#000"],
+    "sizes": ["XS", "S"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "kids",
+    "featured": true,
+    "shipping": true,
+    "stock": 35,
+    "ratings": 4.3,
+    "reviews": 35
+  },
+  {
+    "_id": "c5b1a7f9d8e2c34e607b21d9",
+    "index": 25,
+    "price": 7.99,
+    "picture": "https://i.ibb.co/6tgntT1/white-t-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/6tgntT1/white-t-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/2npt0Dj/white-t-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/8sNSVqQ/white-t-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "White T-Shirt",
+    "gender": "female",
+    "colors": ["#000"],
+    "sizes": ["XS", "S", "M"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "kids",
+    "featured": true,
+    "shipping": true,
+    "stock": 25,
+    "ratings": 4.3,
+    "reviews": 52
+  },
+  {
+    "_id": "8d1c6e7b4a2f39b50e1f8c7",
+    "index": 26,
+    "price": 8.99,
+    "picture": "https://i.ibb.co/BVxS49Q/black-sweatwear-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/BVxS49Q/black-sweatwear-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/s5PH2p7/black-sweatwear-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/s2YSPGL/black-sweatwear-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/ZhMmR0h/black-sweatwear-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Black Sweat-Ware",
+    "gender": "female",
+    "colors": ["#000"],
+    "sizes": ["XS", "S"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "kids",
+    "featured": true,
+    "shipping": true,
+    "stock": 35,
+    "ratings": 4.7,
+    "reviews": 35
+  },
+  {
+    "_id": "3e1f8d2c0b6a7f5d9b4e25b",
+    "index": 27,
+    "price": 14.99,
+    "picture": "https://i.ibb.co/zmkw7K2/white-shirt-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/zmkw7K2/white-shirt-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/cXh4fKd/white-shirt-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/Cz4HT73/white-shirt-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/8KgDTVq/white-shirt-4.jpg",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "White Shirt Orange Pant",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["XS", "S"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "kids",
+    "featured": true,
+    "shipping": true,
+    "stock": 35,
+    "ratings": 4.7,
+    "reviews": 35
+  },
+  {
+    "_id": "a7e1f2b08c3d46b59b1a8f7",
+    "index": 28,
+    "price": 8.99,
+    "picture": "https://i.ibb.co/KrFNJV3/check-shirt-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/KrFNJV3/check-shirt-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/hYTVyYT/check-shirt-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/hK5kVfy/check-shirt-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "Check Shirt",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["XS", "S"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "kids",
+    "featured": true,
+    "shipping": true,
+    "stock": 35,
+    "ratings": 4.8,
+    "reviews": 38
+  },
+  {
+    "_id": "4b0c2e5d1f8a76f9d3e28b",
+    "index": 29,
+    "price": 13.99,
+    "picture": "https://i.ibb.co/wShBpCm/white-shirt-black-pant-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/wShBpCm/white-shirt-black-pant-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/Wfs86fB/white-shirt-black-pant-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/55yBz1T/white-shirt-black-pant-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "White Shirt Black Pant",
+    "gender": "male",
+    "colors": ["#000"],
+    "sizes": ["XS", "S"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "kids",
+    "featured": false,
+    "shipping": true,
+    "stock": 35,
+    "ratings": 4.7,
+    "reviews": 35
+  },
+  {
+    "_id": "f6d9a0c2e1b5b8f7e4a32d6",
+    "index": 30,
+    "price": 5.95,
+    "picture": "https://i.ibb.co/5FztXXm/sample-1.jpg",
+    "gellary": [
+      {
+        "id": "randomid1",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/5FztXXm/sample-1.jpg",
+        "filename": "prod-1.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid2",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/XX354NM/sample-2.jpg",
+        "filename": "prod-2.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid3",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/hdgWHKf/sample-3.jpg",
+        "filename": "prod-3.png",
+        "size": 1080,
+        "type": "image/png"
+      },
+      {
+        "id": "randomid4",
+        "width": 1080,
+        "height": 650,
+        "url": "https://i.ibb.co/j5F87yQ/long-dress.png",
+        "filename": "prod-4.png",
+        "size": 1080,
+        "type": "image/png"
+      }
+    ],
+    "name": "T-shirt",
+    "gender": "female",
+    "colors": ["#000"],
+    "sizes": ["XS", "S", "M"],
+    "description": "The accessories is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "female",
+    "quantity": 0,
+    "featured": true,
+    "shipping": true,
+    "stock": 12,
+    "ratings": 4.8,
+    "reviews": 38
   }
 ]
