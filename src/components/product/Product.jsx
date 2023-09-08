@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import React from "react";
 import { Link } from "react-router-dom";
 import StarRating from "../starRating/StarRating";
@@ -15,7 +15,6 @@ const Product = ({ product, addToCart }) => {
           exit={{ opacity: 0 }}
           className="border col-span-1 rounded-2xl text-center p-5"
         >
-          <AnimatePresence>
             <img
               className="lg:w-80 h-60 object-cover mx-auto"
               src={picture}
@@ -34,7 +33,6 @@ const Product = ({ product, addToCart }) => {
             >
               Buy Now
             </button>
-          </AnimatePresence>
         </motion.div>
       </Link>
     </div>

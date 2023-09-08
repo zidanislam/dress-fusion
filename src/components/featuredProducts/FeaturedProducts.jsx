@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import FeaturedFilter from "../filter/FeaturedFilter";
+import FeaturedFilter from "../featuredFilter/FeaturedFilter";
 import Product from "../product/Product";
 
 const FeaturedProducts = ({ products }) => {
