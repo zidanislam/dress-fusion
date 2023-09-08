@@ -1,21 +1,18 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import useProducts from "../../hooks/useProductsApi";
 import FeaturedFilter from "../filter/FeaturedFilter";
 import Product from "../product/Product";
 
-const FeaturedProducts = () => {
-  const { products } = useProducts();
+const FeaturedProducts = ({ products }) => {
   const [featuredFilter, setFeaturedFilter] = useState([]);
   const [activeCat, setActiveCat] = useState("all");
+ 
 
-  const featured = products.filter((product)=>product.featured=== true);
-  
+  const featured = products.filter((product) => product.featured === true);
 
   useEffect(() => {
     if (activeCat === "all") {
       setFeaturedFilter(featured);
-      return;
     } else {
       const featuredFilter = featured.filter((product) =>
         product.category.includes(activeCat)

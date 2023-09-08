@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <Hero />
       <Brand />
-      <FeaturedProducts />
+      <FeaturedProducts products={products}/>
       <CallToAction />
       <InstaFeed />
       <Testimonial />

@@ -7,6 +7,7 @@ import Contact from "./components/contact/Contact.jsx";
 import Home from "./components/home/Home.jsx";
 import Main from "./components/layout/Main.jsx";
 import Orders from "./components/orders/Orders.jsx";
+import Product from "./components/product/Product.jsx";
 import ScrollTop from "./components/scrollToTop/ScrollTop.jsx";
 import Shop from "./components/shop/Shop.jsx";
 import ProductDetail from "./components/singleProduct/ProductDetail.jsx";
@@ -20,15 +21,17 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        loader: async () => fetch("/products.json"),
       },
       {
         path: "/shop",
         element: <Shop />,
-        loader: () => fetch("products.json"),
+        loader: async () => fetch("/products.json"),
       },
       {
         path: "/product/:productId",
         element: <ProductDetail />,
+        loader: async () => fetch("/products.json"),
       },
       {
         path: "/orders",
@@ -42,14 +45,19 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      {
+        path:"/product",
+        element: <Product/>,
+        loader: async () => fetch("/products.json"),
+      }
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-      <RouterProvider router={router} />
-      <CartIcon />
-      <ScrollTop />
+    <RouterProvider router={router} />
+    <CartIcon />
+    <ScrollTop />
   </React.StrictMode>
 );

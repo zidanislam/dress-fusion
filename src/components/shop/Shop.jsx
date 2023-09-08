@@ -1,20 +1,27 @@
+import { ListBulletIcon, Squares2X2Icon } from "@heroicons/react/24/solid";
 import React, { useState } from "react";
-import useProducts from "../../hooks/useProductsApi";
-import Product from "../product/Product";
+import { useLoaderData } from "react-router-dom";
+import ShopFilter from "../filter/ShopFilter";
+import ListProducts from "../listProducts/ListProducts";
+import Products from "../products/Products";
 
 const Shop = () => {
-  const { products } = useProducts();
-  const [cart, setCart] = useState([]);
-  const addToCart = (product) => {
-    const newCart = [...cart, product];
-    setCart(newCart);
-  };
+  const [gridView, setGridView] = useState(true);
+  const products = useLoaderData();
+  console.log(products);
   return (
-    <div className="grid grid-cols-4 gap-4">
-      <div className="grid gap-3 mx-auto col-span-3 lg:grid-cols-3">
-        {products.map((product) => (
-          <Product key={product._id} product={product} addToCart={addToCart} />
-        ))}
+    <div className="grid grid-cols-12 gap-4">
+      <div className="mx-auto col-span-3">
+        <ShopFilter />
+      </div>
+      <div className="col-span-8">
+        <div className="flex my-5 gap-2">
+          <Squares2X2Icon className="h-5 w-5 bg-slate-200 border rounded-lg cursor-pointer" onClick={()=>setGridView(true)} />
+          <ListBulletIcon className="h-5 w-5 bg-slate-200 border rounded-lg cursor-pointer" onClick={()=>setGridView(false)} />
+        </div>
+        <div>
+          {gridView ? <Products /> : <ListProducts />}
+        </div>
       </div>
     </div>
   );
