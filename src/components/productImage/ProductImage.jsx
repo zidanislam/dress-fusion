@@ -9,8 +9,8 @@ const ProductImage = ({ imgs = [{ url: "" }] }) => {
     }
   }, [imgs]);
   return (
-    <div className="flex flex-col-reverse gap-3">
-      <div className="flex gap-3">
+    <div className="flex align-top flex-col-reverse gap-3">
+      <div className="flex flex-wrap gap-3">
         {imgs.map((current, index) => {
           return (
             <img
