@@ -1,23 +1,26 @@
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
+import { useLoaderData } from "react-router-dom";
 import FeaturedFilter from "../featuredFilter/FeaturedFilter";
 import Product from "../product/Product";
 
-const FeaturedProducts = ({ products }) => {
+const FeaturedProducts = () => {
+  const products = useLoaderData();
   const [featuredFilter, setFeaturedFilter] = useState([]);
   const [activeCat, setActiveCat] = useState("all");
- 
 
-  const featured = products.filter((product) => product.featured === true);
+  const featured = useMemo(() => {
+   return products.filter((product) => product.featured === true);
+  }, [products]);
 
   useEffect(() => {
     if (activeCat === "all") {
       setFeaturedFilter(featured);
     } else {
-      const featuredFilter = featured.filter((product) =>
+      const filteredProducts = featured.filter((product) =>
         product.category.includes(activeCat)
       );
-      setFeaturedFilter(featuredFilter);
+      setFeaturedFilter(filteredProducts);
     }
   }, [featured, activeCat]);
 

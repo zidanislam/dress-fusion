@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import About from "./components/about/About.jsx";
 import CartIcon from "./components/cartIcon/CartIcon.jsx";
 import Contact from "./components/contact/Contact.jsx";
+import FeaturedProducts from "./components/featuredProducts/FeaturedProducts.jsx";
 import Home from "./components/home/Home.jsx";
 import Main from "./components/layout/Main.jsx";
 import Orders from "./components/orders/Orders.jsx";
@@ -46,10 +47,15 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path:"/product",
-        element: <Product/>,
+        path: "/product",
+        element: <Product />,
         loader: async () => fetch("/products.json"),
-      }
+      },
+      {
+        path: "/featured",
+        element: <FeaturedProducts />,
+        loader: async () => fetch("/products.json"),
+      },
     ],
   },
 ]);

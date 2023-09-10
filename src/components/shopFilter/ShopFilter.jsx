@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from "react";
 
 const ShopFilter = () => {
-    return (
-        <div>
-            this is filter for products
-        </div>
-    );
+  
+  return (
+    <div>
+      
+    </div>
+  );
 };
 
 export default ShopFilter;
