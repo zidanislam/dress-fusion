@@ -27,15 +27,11 @@ const FeaturedProducts = () => {
   return (
     <>
       <div className="text-center 2xl:my-24 xl:my-24">
-        <h2 className="2xl:text-5xl xl:text-3xl mb-3 text-gray-800">
+        <h2 className="2xl:text-5xl xl:text-3xl lg:text-3xl mb-3 text-gray-800">
           New Arrivals
         </h2>
-        <p className="2xl:text-base xl:text-sm -mb-10 text-gray-700">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
-          duis
-          <br />
-          ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
-          sollicitudin
+        <p className="2xl:text-base xl:text-sm -mb-10 lg:mb-10 text-gray-700">
+          Check out our featured and most popular products. Grab Before It's Gone!!!
         </p>
       </div>
       <FeaturedFilter setActiveCat={setActiveCat} activeCat={activeCat} />

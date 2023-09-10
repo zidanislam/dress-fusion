@@ -12,6 +12,8 @@ const Shop = () => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [activeSize, setActivesize] = useState("all");
 
+  
+
   // Sorting functions
   const sortingFunctions = {
     "a-z": (a, b) => a.name.localeCompare(b.name),
@@ -31,9 +33,7 @@ const Shop = () => {
     .sort(sortingFunctions[initialSort])
 
     .filter((product) =>
-      activeSize === "all"
-        ? true
-        : product.sizes.includes(activeSize)
+      activeSize === "all" ? true : product.sizes.includes(activeSize)
     );
 
   const handleUniqueData = (data, property) => {
@@ -96,7 +96,9 @@ const Shop = () => {
             <button
               key={index}
               onClick={() => setActivesize(size)}
-              className={`border border-slate-300 px-4 py-2 rounded-lg capitalize ${activeSize=== size? "bg-black text-white" : ""}`}
+              className={`border border-slate-300 px-4 py-2 rounded-lg capitalize ${
+                activeSize === size ? "bg-black text-white" : ""
+              }`}
             >
               {size}
             </button>
@@ -150,9 +152,13 @@ const Shop = () => {
             filteredProducts.map((product) => (
               <div key={product._id}>
                 {gridView ? (
-                  <Product product={product} />
+                  <Product
+                    product={product}
+                  />
                 ) : (
-                  <ListProduct product={product} />
+                  <ListProduct
+                    product={product}
+                  />
                 )}
               </div>
             ))

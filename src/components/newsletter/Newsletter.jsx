@@ -2,18 +2,18 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <div className="flex justify-center align-middle 2xl:my-18 xl:my-16">
-      <img src="https://i.ibb.co/NC0Xm4d/newsletter-male.png" className="xl:w-56" alt="" />
+    <div className="grid grid-cols-3 place-items-center 2xl:px-80 xl:px-32 2xl:my-18 lg:px-20 xl:my-16 lg:my-14">
+      <img
+        src="https://i.ibb.co/NC0Xm4d/newsletter-male.png"
+        className="xl:w-56 lg:w-44"
+        alt=""
+      />
       <div className="flex flex-col items-center my-auto">
-        <h2 className="heading xl:text-4xl my-5 text-center">
-          Follow Us On Instagram
+        <h2 className="2xl:text-5xl xl:text-3xl lg:text-3xl my-5 text-center">
+          Our Newsletter
         </h2>
         <p className="text-center mb-5 text-base text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
-          duis
-          <br />
-          ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
-          sollicitudin
+          Stay connected with us with your email. Never miss an update.
         </p>
         <input
           type="email"
@@ -24,7 +24,11 @@ const Newsletter = () => {
           Subscribe Now
         </button>
       </div>
-      <img src="https://i.ibb.co/nCL8cv0/newsletter-female.png" className="xl:w-56" alt="" />
+      <img
+        src="https://i.ibb.co/nCL8cv0/newsletter-female.png"
+        className="xl:w-56 lg:w-44"
+        alt=""
+      />
     </div>
   );
 };

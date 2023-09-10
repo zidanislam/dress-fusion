@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 import useCartIcon from "../../hooks/useCartIcon";
 import StarRating from "../starRating/StarRating";
 
-const Product = ({ product, addToCart }) => {
+const Product = ({ product}) => {
   const { picture, name, price, _id, ratings } = product;
+  const [handleAddToCart] = useCartIcon([]);
   return (
     <div>
       <motion.div
@@ -29,10 +30,7 @@ const Product = ({ product, addToCart }) => {
             <StarRating ratings={ratings} />
           </div>
         </Link>
-        <button
-          className="border-2 rounded-lg px-5 py-2 hover:bg-black hover:text-white hover:duration-300"
-          onClick={useCartIcon}
-        >
+        <button className="border-2 rounded-lg px-5 py-2 hover:bg-black hover:text-white hover:duration-300" onClick={()=>handleAddToCart(product)}>
           Buy Now
         </button>
       </motion.div>

@@ -11,3 +11,11 @@
   height: 390px;
   box-shadow: none !important;
 }
+@media (max-width: 1024px) {
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 650px;
+    height: 280px;
+  }
+}

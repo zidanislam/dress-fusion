@@ -1,11 +1,12 @@
 import { useState } from "react";
 
-const useCartIcon = (product) => {
+const useCartIcon = () => {
   const [cart, setCart] = useState([]);
-
-  const newCart = [...cart, product];
-  setCart(newCart);
-  return cart;
+  const handleAddToCart = (product) => {
+    const newCart = [...cart, product];
+    setCart(newCart);
+  };
+  return [cart, handleAddToCart];
 };
 
 export default useCartIcon;

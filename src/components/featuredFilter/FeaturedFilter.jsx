@@ -4,41 +4,41 @@ const FeaturedFilter = ({ setActiveCat, activeCat }) => {
   return (
     <div className="flex justify-center my-10">
       <button
-        className={
+        className={`border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg ${
           activeCat === "all"
-            ? "bg-black text-white border border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg"
-            : "bg-white text-black border border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg"
-        }
+            ? "bg-black text-white border "
+            : "bg-white text-black border"
+        }`}
         onClick={() => setActiveCat("all")}
       >
         All
       </button>
       <button
-        className={
+        className={`border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg ${
           activeCat === "men"
-            ? "bg-black text-white border border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg"
-            : "bg-white text-black border border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg"
-        }
+            ? "bg-black text-white border "
+            : "bg-white text-black border"
+        }`}
         onClick={() => setActiveCat("men")}
       >
         Men
       </button>
       <button
-        className={
+        className={`border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg ${
           activeCat === "female"
-            ? "bg-black text-white border border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg"
-            : "bg-white text-black border border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg"
-        }
+            ? "bg-black text-white border "
+            : "bg-white text-black border"
+        }`}
         onClick={() => setActiveCat("female")}
       >
         Women
       </button>
       <button
-        className={
+        className={`border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg ${
           activeCat === "kids"
-            ? "bg-black text-white border border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg"
-            : "bg-white text-black border border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg"
-        }
+            ? "bg-black text-white border "
+            : "bg-white text-black border"
+        }`}
         onClick={() => setActiveCat("kids")}
       >
         Kids
