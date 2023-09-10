@@ -8,7 +8,7 @@ const ProductDetail = () => {
   const products = useLoaderData();
   const { productId } = useParams();
   const [product, setProduct] = useState({});
-  const [selectedsize, setSelectedSize] = useState();
+  const [selectedSize, setSelectedSize] = useState();
   const [amount, setAmount] = useState(1);
   const handleIncrease = () => {
     amount < stock ? setAmount(amount + 1) : setAmount(stock);
@@ -33,6 +33,8 @@ const ProductDetail = () => {
     reviews,
     stock,
   } = product;
+  
+  console.log(selectedSize)
 
   return (
     <div className="grid items-start grid-cols-2 mx-40 gap-12">
@@ -60,7 +62,7 @@ const ProductDetail = () => {
                 <button
                   onClick={() => setSelectedSize(size)}
                   className={
-                    selectedsize === size
+                    selectedSize === size
                       ? "border bg-black text-white border-black rounded-lg mx-3 px-2 py-1"
                       : "border border-black rounded-lg mx-3 px-2 py-1 "
                   }
@@ -87,9 +89,12 @@ const ProductDetail = () => {
                 />
               </button>
             </div>
-            <button className="bg-black text-white py-2.5 px-10 my-5 text-base rounded-lg">
+            { selectedSize === undefined ? (<button disabled className="bg-gray-700 text-white py-2.5 px-10 my-5 text-base rounded-lg">
               Add To Cart
-            </button>
+            </button>) : (<button className="bg-black text-white py-2.5 px-10 my-5 text-base rounded-lg">
+              Add To Cart
+            </button>)}
+            
           </>
         )}
       </div>

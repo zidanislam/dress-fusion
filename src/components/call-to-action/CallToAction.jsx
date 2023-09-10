@@ -5,17 +5,17 @@ const CallToAction = () => {
   return (
     <>
       <div className="skewed-box">
-        <div className="imagebox h-full lg:h-96 bg-gray-100">
+        <div className="imagebox xl:h-full lg:h-96 bg-gray-100">
           <img
             src="https://i.ibb.co/PCJFK74/call-to-action.png"
-            className="h-full lg:h-96"
+            className=" xl:h-full lg:h-96"
             alt=""
           />
         </div>
         <div className="text box-border">
-          <div className="flex flex-col items-start mt-16 lg:mt-5 px-8 gap-5 lg:gap-2">
+          <div className="flex flex-col items-start xl:mt-16 lg:mt-5 px-8 xl:gap-5 lg:gap-2">
             <p className="text-base text-gray-600">Women Collection</p>
-            <h2 className="text-5xl lg:text-3xl">Peaky Blinders</h2>
+            <h2 className="xl:text-5xl lg:text-3xl">Peaky Blinders</h2>
             <p className="text-base text-gray-900 underline">DESCRIPTION</p>
             <p className="text-base text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
