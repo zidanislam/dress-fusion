@@ -3,15 +3,15 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import About from "./components/about/About.jsx";
 import CartIcon from "./components/cartIcon/CartIcon.jsx";
-import Contact from "./components/contact/Contact.jsx";
+import CartPage from "./components/cartPage/CartPage.jsx";
 import FeaturedProducts from "./components/featuredProducts/FeaturedProducts.jsx";
 import Home from "./components/home/Home.jsx";
 import Main from "./components/layout/Main.jsx";
 import Orders from "./components/orders/Orders.jsx";
-import Product from "./components/product/Product.jsx";
 import ScrollTop from "./components/scrollToTop/ScrollTop.jsx";
 import Shop from "./components/shop/Shop.jsx";
 import ProductDetail from "./components/singleProduct/ProductDetail.jsx";
+import { CartProvider } from "./context/cartContext.jsx";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -43,18 +43,13 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/product",
-        element: <Product />,
-        loader: async () => fetch("/products.json"),
-      },
-      {
         path: "/featured",
         element: <FeaturedProducts />,
         loader: async () => fetch("/products.json"),
+      },
+      {
+        path: "/cart",
+        element: <CartPage />,
       },
     ],
   },
@@ -62,8 +57,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-    <CartIcon />
-    <ScrollTop />
+    <CartProvider>
+      <RouterProvider router={router} />
+      <CartIcon />
+      <ScrollTop />
+    </CartProvider>
   </React.StrictMode>
 );

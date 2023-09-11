@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
+import { useCartContext } from "../../context/cartContext";
 import ProductImage from "../productImage/ProductImage";
 import StarRating from "../starRating/StarRating";
 
@@ -24,6 +25,8 @@ const ProductDetail = () => {
   }, [products, productId]);
   const {
     name,
+    _id,
+    picture,
     price,
     description,
     sizes,
@@ -33,8 +36,8 @@ const ProductDetail = () => {
     reviews,
     stock,
   } = product;
-  
-  console.log(selectedSize)
+
+  const { addToCart } = useCartContext();
 
   return (
     <div className="grid items-start grid-cols-2 mx-40 gap-12">
@@ -89,12 +92,34 @@ const ProductDetail = () => {
                 />
               </button>
             </div>
-            { selectedSize === undefined ? (<button disabled className="bg-gray-700 text-white py-2.5 px-10 my-5 text-base rounded-lg">
-              Add To Cart
-            </button>) : (<button className="bg-black text-white py-2.5 px-10 my-5 text-base rounded-lg">
-              Add To Cart
-            </button>)}
-            
+            {selectedSize === undefined ? (
+              <button
+                disabled
+                className="bg-gray-700 text-white py-2.5 px-10 my-5 text-base rounded-lg"
+              >
+                Add To Cart
+              </button>
+            ) : (
+              <Link to={"/cart"}>
+                <button
+                  className="bg-black text-white py-2.5 px-10 my-5 text-base rounded-lg"
+                  onClick={() =>
+                    addToCart(
+                      name,
+                      stock,
+                      picture,
+                      price,
+                      _id,
+                      selectedSize,
+                      amount,
+                      product
+                    )
+                  }
+                >
+                  Add To Cart
+                </button>
+              </Link>
+            )}
           </>
         )}
       </div>

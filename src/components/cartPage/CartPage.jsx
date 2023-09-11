@@ -1,21 +1,25 @@
 import React from "react";
+import { useCartContext } from "../../context/cartContext";
+import CartProduct from "../cartProduct/CartProduct";
 
-const Cart = ({ cart }) => {
-  let total = 0;
-  for (const product of cart) {
-    total = total + product.price;
-  }
+const CartPage = () => {
+  const { cart } = useCartContext();
+
   return (
-    <div className="col-span-1">
-      <h2 className="text-xl font-semibold text-center mb-10">Order Summary</h2>
-      <p className="text-lg font-medium mb-4">Total Quantity: {cart.length}</p>
-      <p className="text-lg font-medium mb-4">Total Price: {total}</p>
-      <p className="text-lg font-medium mb-4">Shipping: </p>
-      <p className="text-lg font-medium mb-4">TAX: </p>
+    <div className="mx-auto 2xl:px-80 xl:px-32 lg:px-20">
+      <div className="grid lg:grid-cols-5 grid-cols-3 text-center">
+        <p>Name</p>
+        <p className="lg:block hidden">Price</p>
+        <p>Quantity</p>
+        <p className="lg:block hidden">Subtotal</p>
+        <p>Remove</p>
+      </div>
       <hr />
-      <h2 className="text-lg font-medium mb-4">Subtotal: </h2>
+      {cart.map((product) => {
+        return <CartProduct key={product._id} {...product} />;
+      })}
     </div>
   );
 };
 
-export default Cart;
+export default CartPage;
