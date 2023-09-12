@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useCartContext } from "../../context/cartContext";
 
 const CartIcon = () => {
-  const { cart, total_item } = useCartContext([]);
+  const { total_item } = useCartContext();
 
   return (
     <div className="flex justify-center items-center relative cursor-pointer">
