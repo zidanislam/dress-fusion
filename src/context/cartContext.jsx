@@ -52,6 +52,7 @@ const CartProvider = ({ children }) => {
 
   useEffect(() => {
     dispatch({ type: "TOTAL_ITEM" });
+    dispatch({ type: "CALCULATE_PRICE" });
     localStorage.setItem("dressFusionCart", JSON.stringify(state.cart));
   }, [state.cart]);
 
@@ -65,6 +66,7 @@ const CartProvider = ({ children }) => {
   const handleIncrease = (_id) => {
     dispatch({ type: "INCREASE", payload: _id });
   };
+
   return (
     <CartContext.Provider
       value={{

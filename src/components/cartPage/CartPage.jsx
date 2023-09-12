@@ -4,13 +4,18 @@ import { useCartContext } from "../../context/cartContext";
 import CartProduct from "../cartProduct/CartProduct";
 
 const CartPage = () => {
-  const { cart, clearCart } = useCartContext();
+  const { cart, clearCart, total_price, shipping } = useCartContext();
+  console.log(total_price);
+
+  const tax = (total_price * 7) / 100;
 
   if (cart.length === 0) {
     return (
       <div className="flex flex-col h-80 justify-center text-center">
         <p className="text-5xl mb-16">No Items In The Cart</p>
-        <Link to="/shop" className="text-lg text-indigo-700">Back to shop</Link>
+        <Link to="/shop" className="text-lg text-indigo-700">
+          Back to shop
+        </Link>
       </div>
     );
   }
@@ -41,6 +46,29 @@ const CartPage = () => {
           >
             Clear Cart
           </button>
+        </div>
+      </div>
+      <div className="my-10 grid grid-cols-5">
+        <div className="col-span-2 bg-slate-100 p-8">
+          <div className="grid grid-cols-2 mb-1">
+            <h4 className="text-lg">Subtotal:</h4>
+            <p>$ {total_price.toFixed(2)}</p>
+          </div>
+          <div className="grid grid-cols-2 mb-1">
+            <h4 className="text-lg">Shipping:</h4>
+            <p className="text-lg">$ {shipping.toFixed(2)}</p>
+          </div>
+          <div className="grid grid-cols-2 mb-1">
+            <h4 className="text-lg">TAX:</h4>
+            <p className="text-lg">$ {tax.toFixed(2)}</p>
+          </div>
+          <hr className=" border-black mb-1" />
+          <div className="grid grid-cols-2 mb-1">
+            <h4 className="text-xl font-semibold">Order Total:</h4>
+            <p className="text-xl font-semibold">
+              $ {(total_price + shipping + tax).toFixed(2)}
+            </p>
+          </div>
         </div>
       </div>
     </div>

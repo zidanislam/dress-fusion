@@ -104,6 +104,19 @@ const cartReducer = (state, action) => {
       total_item: cartValue,
     };
   }
+
+  if (action.type === "CALCULATE_PRICE") {
+    let orderPrice = state.cart.reduce((initVal, currVal) => {
+      let { price, amount } = currVal;
+
+      initVal = initVal + price *amount ;
+      return initVal;
+    }, 0);
+    return {
+      ...state,
+      total_price: orderPrice,
+    };
+  }
   return state;
 };
 
