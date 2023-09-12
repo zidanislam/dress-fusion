@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import CartIcon from "../cartIcon/CartIcon";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
 
@@ -8,6 +9,7 @@ const Main = () => {
     <>
       <Header />
       <Outlet />
+      <CartIcon />
       <Footer />
     </>
   );

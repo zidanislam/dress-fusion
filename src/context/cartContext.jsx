@@ -1,11 +1,20 @@
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useEffect, useReducer } from "react";
 import reducer from "../reducer/cartReducer";
 
 const CartContext = createContext();
 
+const getCartData = () => {
+  let localData = localStorage.getItem("dressFusionCart");
+  if (localData.length === 0) {
+    return [];
+  } else {
+    return JSON.parse(localData);
+  }
+};
 const initialState = {
-  cart: [],
+  cart: getCartData(),
   total_item: "",
+  total_price: "",
   shipping: 3,
 };
 
@@ -37,8 +46,36 @@ const CartProvider = ({ children }) => {
     });
   };
 
+  const handleDelete = (_id) => {
+    dispatch({ type: "DELETE_ITEM", payload: _id });
+  };
+
+  useEffect(() => {
+    dispatch({ type: "TOTAL_ITEM" });
+    localStorage.setItem("dressFusionCart", JSON.stringify(state.cart));
+  }, [state.cart]);
+
+  const clearCart = () => {
+    dispatch({ type: "CLEAR_DATA" });
+  };
+
+  const handleDecrease = (_id) => {
+    dispatch({ type: "DECREASE", payload: _id });
+  };
+  const handleIncrease = (_id) => {
+    dispatch({ type: "INCREASE", payload: _id });
+  };
   return (
-    <CartContext.Provider value={{ ...state, addToCart }}>
+    <CartContext.Provider
+      value={{
+        ...state,
+        addToCart,
+        handleDelete,
+        clearCart,
+        handleDecrease,
+        handleIncrease,
+      }}
+    >
       {children}
     </CartContext.Provider>
   );

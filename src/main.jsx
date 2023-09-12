@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Error from "./components/404/Error.jsx";
 import About from "./components/about/About.jsx";
-import CartIcon from "./components/cartIcon/CartIcon.jsx";
 import CartPage from "./components/cartPage/CartPage.jsx";
 import FeaturedProducts from "./components/featuredProducts/FeaturedProducts.jsx";
 import Home from "./components/home/Home.jsx";
@@ -53,13 +53,16 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "*",
+    element: <Error></Error>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <CartProvider>
       <RouterProvider router={router} />
-      <CartIcon />
       <ScrollTop />
     </CartProvider>
   </React.StrictMode>
