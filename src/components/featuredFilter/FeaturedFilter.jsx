@@ -2,9 +2,9 @@ import React from "react";
 
 const FeaturedFilter = ({ setActiveCat, activeCat }) => {
   return (
-    <div className="flex justify-center my-10">
+    <div className="flex justify-center md:my-10 my-7">
       <button
-        className={`border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg ${
+        className={`border-black hover:bg-black hover:text-white md:mx-3 mx-1 py-2.5 px-5 md:text-base text-sm md:rounded-lg rounded-md ${
           activeCat === "all"
             ? "bg-black text-white border "
             : "bg-white text-black border"
@@ -14,7 +14,7 @@ const FeaturedFilter = ({ setActiveCat, activeCat }) => {
         All
       </button>
       <button
-        className={`border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg ${
+        className={`border-black hover:bg-black hover:text-white md:mx-3 mx-1 py-2.5 px-5 md:text-base text-sm md:rounded-lg rounded-md ${
           activeCat === "men"
             ? "bg-black text-white border "
             : "bg-white text-black border"
@@ -24,7 +24,7 @@ const FeaturedFilter = ({ setActiveCat, activeCat }) => {
         Men
       </button>
       <button
-        className={`border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg ${
+        className={`border-black hover:bg-black hover:text-white md:mx-3 mx-1 py-2.5 px-5 md:text-base text-sm md:rounded-lg rounded-md ${
           activeCat === "female"
             ? "bg-black text-white border "
             : "bg-white text-black border"
@@ -34,7 +34,7 @@ const FeaturedFilter = ({ setActiveCat, activeCat }) => {
         Women
       </button>
       <button
-        className={`border-black hover:bg-black hover:text-white mx-3 py-2.5 px-5 text-base rounded-lg ${
+        className={`border-black hover:bg-black hover:text-white md:mx-3 mx-1 py-2.5 px-5 md:text-base text-sm md:rounded-lg rounded-md ${
           activeCat === "kids"
             ? "bg-black text-white border "
             : "bg-white text-black border"

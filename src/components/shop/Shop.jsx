@@ -60,15 +60,15 @@ const Shop = () => {
   });
 
   return (
-    <div className="grid grid-cols-12 gap-3">
+    <div className="grid grid-cols-7 lg:gap-5 md:gap-3 2xl:px-80 xl:px-32 lg:px-20 md:px-6 2xl:my-16 xl:my-10 lg:my-8">
       {/* Sidebar */}
       {/* Search section */}
-      <div className="mx-auto col-span-4">
+      <div className="col-span-2 top-0">
         <input
           type="text"
           value={query}
           placeholder="Search..."
-          className="border-gray-400 rounded-lg border focus:outline-gray-500 p-2"
+          className="border-gray-400 rounded-lg border focus:outline-gray-500 p-2 md:w-4/5"
           onChange={(e) => setQuery(e.target.value)}
         />
         {/* End of search section */}
@@ -105,7 +105,7 @@ const Shop = () => {
           ))}
         </div>
       </div>
-      <div className="col-span-7">
+      <div className="col-span-5">
         <div className="flex align-middle justify-between mb-5">
           <div className="flex align-middle gap-2">
             <Squares2X2Icon
@@ -141,7 +141,7 @@ const Shop = () => {
         </div>
         <div
           className={
-            gridView ? "grid gap-5 lg:grid-cols-3" : "grid gap-5 lg:grid-cols-1"
+            gridView ? "grid gap-2 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2" : "grid gap-5 lg:grid-cols-1"
           }
         >
           {filteredProducts.length === 0 ? (

@@ -19,3 +19,10 @@
     height: 280px;
   }
 }
+@media (max-width: 425px) {
+  /* img {
+    width: 75%;
+    display: flex;
+    margin: auto;
+  } */
+}

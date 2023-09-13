@@ -28,7 +28,7 @@ const ScrollTop = () => {
           onClick={backToTop}
           className="flex align-middle justify-center relative cursor-pointer"
         >
-          <ChevronUpIcon className="2xl:h-12 2xl:w-12 h-10 w-10 text-black border rounded-full border-black hover:bg-black hover:text-white lg:bottom-5 lg:right-5 2xl:bottom-9 2xl:right-10 fixed z-50" />
+          <ChevronUpIcon className="2xl:h-12 2xl:w-12 md:h-10 md:w-10 h-8 w-8 text-black border rounded-full border-black hover:bg-black hover:text-white lg:bottom-5 lg:right-5 2xl:bottom-9 2xl:right-10 right-5 bottom-5 fixed z-50" />
         </div>
       )}
     </>

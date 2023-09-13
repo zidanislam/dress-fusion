@@ -1,36 +1,89 @@
-.skewed-box {
+.skewed {
   width: 100%;
-  height: 570px;
+  color: black;
   display: flex;
+  background-color: #dadada;
+  margin: 2em, 0;
 }
-
-.imagebox {
-  width: calc(50%);
-}
-
 .text {
-  width: calc(50%);
-  height: 100%;
+  width: 50%;
+}
+.image {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.image::before {
+  content: "";
+  position: absolute;
+  left: -3.1em;
+  top: -80%;
+  transform: translateY(-50%) rotate(-20deg);
   background: #dadada;
-  border-left: 110px solid #f3f4f6;
-  border-bottom: 570px solid transparent;
+  width: 40%;
+  height: 140%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
 
-.price {
-  font-size: 28px;
-  font-weight: 500;
+.skewed-left .image::before {
+  transform: translateY(50%) rotate(20deg);
+  left: initial;
+  right: -10.1em;
 }
-@media (max-width: 1024px) {
-  .skewed-box {
+.call-image {
+  width: 140%;
+  background-color: #f3f4f6;
+}
+
+@media screen and (max-width: 1024px) {
+  .image::before {
+    content: "";
+    position: absolute;
+    left: -5.1em;
+    top: -100%;
+    transform: translateY(-30%) rotate(-20deg);
+    background: #dadada;
+    width: 40%;
+    height: 140%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  }
+  .skewed-left .image::before {
+    transform: translateY(60%) rotate(20deg);
+    left: initial;
+    right: -8.1em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .skewed-left .image::before {
+    transform: translateY(60%) rotate(20deg);
+    left: initial;
+    right: -6.1em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .skewed {
+    display: block;
+  }
+  .image {
     width: 100%;
-    height: 370px;
-    display: flex;
   }
   .text {
-    width: calc(50%);
-    height: 67%;
-    background: #dadada;
-    border-left: 110px solid #f3f4f6;
-    border-bottom: 385px solid transparent;
+    width: 100%;
+  }
+  .call-image {
+    width: 100%;
+  }
+  .skewed .image::before {
+    width: 120%;
+    height: 100%;
+    top: -5em;
+    left: 50%;
+    transform: translateX(50%) rotate(10deg);
+  }
+  .skewed-left .image::before {
+    transform: translateX(-50%) rotate(-10deg);
+    top: initial;
+    bottom: -16em;
   }
 }

@@ -3,8 +3,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import StarRating from "../starRating/StarRating";
 
-const Product = ({ product}) => {
-  const { picture, name, price, _id, ratings } = product;
+const Product = ({ product }) => {
+  const { picture, name, price, _id, ratings, category } = product;
   return (
     <div>
       <motion.div
@@ -12,25 +12,28 @@ const Product = ({ product}) => {
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
         exit={{ opacity: 0 }}
-        className="border col-span-1 rounded-2xl text-center p-5"
+        className="border col-span-1 rounded-2xl xl:p-3 lg:p-3 md:p-3 p-2"
       >
         <Link to={`/product/${_id}`}>
           <img
-            className="lg:w-80 h-60 object-cover mx-auto"
+            className="2xl:h-56 object-cover mx-auto mb-5 rounded-lg"
             src={picture}
             alt=""
           />
-          <div className="my-2">
-            <h2 className="text-xl font-semibold">{name}</h2>
-            <p className="text-lg">${price}</p>
-          </div>
-          <div className="flex justify-center my-2">
+          <div className="flex justify-between md:gap-2">
+            <div className="md:mb-1 mb-3">
+              <h2 className="2xl:text-base xl:text-base text-sm">{name}</h2>
+              <p className="text-xs capitalize text-left">{category}</p>
+            </div>
             <StarRating ratings={ratings} />
           </div>
+          <div className="flex justify-between lg:mt-10 md:mt-5">
+            <p className="lg:text-lg md:text-sm md:font-semibold font-medium">${price}</p>
+            <button className="2xl:text-base lg:text-sm md:text-sm text-xs text-indigo-700 hover:duration-300">
+              View Options
+            </button>
+          </div>
         </Link>
-        <button className="border-2 rounded-lg px-5 py-2 hover:bg-black hover:text-white hover:duration-300">
-          Buy Now
-        </button>
       </motion.div>
     </div>
   );

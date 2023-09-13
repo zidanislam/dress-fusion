@@ -3,33 +3,44 @@ import "./hero.css";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-3 2xl:gap-12 gap-9 mx-auto mb-6 2xl:px-80 xl:px-32 lg:px-20">
-      <div className="w-full 2xl:pt-48 xl:pt-32 lg:pt-24 rounded-xl bg-gray-300">
-        <img src="https://i.ibb.co/KGxFdyR/hero-l-img.png" alt="" />
+    <div className="grid grid-cols-3 2xl:gap-12 xl:gap-9 lg:gap-9 md:gap-5 gap-3 mx-auto mb-6 2xl:px-80 xl:px-32 lg:px-20 md:px-6 px-6">
+      <div className="w-full 2xl:pt-20 xl:pt-32 lg:pt-24 md:pt-16 pt-5 rounded-xl bg-gray-300">
+        <img
+          src="https://i.ibb.co/KGxFdyR/hero-l-img.png"
+          className="2xl:w-full"
+          alt=""
+        />
       </div>
-      <div className="grid grid-cols-1 2xl:gap-20 xl:gap-6 lg:gap-10 text-center">
-        <div className="bg-gray-300 rounded-xl px-2 2xl:pt-7 xl:pt-8">
-          <img src="https://i.ibb.co/GnJYWFX/hero-img.png"  className="2xl:mt-2" alt="" />
+      <div className="grid grid-cols-1 2xl:gap-10 xl:gap-8 lg:gap-6 md:gap-5 text-center">
+        <div className="bg-gray-300 md:ounded-xl rounded-md w-full flex align-bottom px-2 2xl:pt-12 xl:pt-4 lg:pt-4 md:pt-5 pt-1">
+          <img
+            src="https://i.ibb.co/GnJYWFX/hero-img.png"
+            className="2xl:mt-2"
+            alt=""
+          />
         </div>
-        <div>
-          <h1 className="mb-10">
-            <span className="text-gray-800 xl:text-7xl lg:text-6xl hero-head font-medium">
-              ULTIMATE
-            </span>
-            <br />
-            <span className="xl:text-9xl lg:text-8xl font-bold text-stroke">SALE</span>
+        <div className="grid 2xl:gap-1 xl:gap-2">
+          <h1 className="2xl:mb-5 text-gray-800 2xl:text-7xl xl:text-7xl lg:text-6xl md:text-5xl text-xl hero-head font-medium">
+            ULTIMATE
           </h1>
-          <p className="text-xl lg:text-2xl text-gray-800 mb-9">NEW COLLECTION</p>
-          <button className="bg-black text-white py-5 px-14 rounded-xl text-base">
-            SHOP NOW
-          </button>
+          <h1 className="2xl:text-9xl xl:text-9xl lg:text-8xl md:text-7xl text-3xl font-bold text-stroke">
+            SALE
+          </h1>
+          <p className="2xl:text-2xl lg:text-xl md:text-base text-xs text-gray-800 2xl:mb-5 xl:mb-4 lg:mb-3 md:mb-2">
+            NEW COLLECTION
+          </p>
+          <div>
+            <button className="bg-black text-white xl:py-5 xl:px-14 lg:py-2.5 lg:px-5 md:py-2 md:px-3 px-2.5 py-1 md:rounded-xl rounded-md xl:text-base md:text-sm text-xs mb-1">
+              SHOP NOW
+            </button>
+          </div>
         </div>
         <img src="https://i.ibb.co/M2TYwbD/hero-b-img.png" alt="" />
       </div>
-      <div className="2xl:pt-48 xl:pt-36 lg:pt-10 rounded-xl bg-gray-300">
+      <div className="2xl:pt-14 xl:pt-24 lg:pt-12 md:pt-5 rounded-xl bg-gray-300">
         <img
           src="https://i.ibb.co/2FQ74fw/hero-r-img.png"
-          className="mx-auto lg:w-48"
+          className="mx-auto 2xl:w-4/5 xl:w-64 lg:w-48 md:w-3/4 w-3/4"
           alt=""
         />
       </div>

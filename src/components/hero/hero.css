@@ -1,5 +1,5 @@
 .size {
-  font-size: 128px;
+  /* font-size: 128px; */
 }
 
 .text-stroke {
@@ -8,10 +8,10 @@
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 1536px) {
-  .text-stroke {
+  /* .text-stroke {
     font-size: 187px;
-  }
-  .hero-head {
+  } */
+  /* .hero-head {
     font-size: 91px;
-  }
+  } */
 }

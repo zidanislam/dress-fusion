@@ -459,7 +459,7 @@
         "type": "image/png"
       }
     ],
-    "name": "Black-T with Sticker",
+    "name": "Sticker T-shirt",
     "gender": "female",
     "colors": ["#000"],
     "sizes": ["XS", "S", "M", "L", "XL"],
@@ -626,7 +626,7 @@
         "type": "image/png"
       }
     ],
-    "name": "Casual Office Outfit",
+    "name": "Office Outfit",
     "gender": "female",
     "colors": ["#000"],
     "sizes": ["XS", "S", "M", "L", "XL"],
@@ -866,7 +866,7 @@
         "type": "image/png"
       }
     ],
-    "name": "Full sleeve Black Shirt",
+    "name": "Full sleeve shirt",
     "gender": "male",
     "colors": ["#000"],
     "sizes": ["M", "L", "XL"],
@@ -1380,7 +1380,7 @@
         "type": "image/png"
       }
     ],
-    "name": "Black Sweat-Ware",
+    "name": "Black Sweater",
     "gender": "female",
     "colors": ["#000"],
     "sizes": ["XS", "S"],
@@ -1435,7 +1435,7 @@
         "type": "image/png"
       }
     ],
-    "name": "White Shirt Orange Pant",
+    "name": "White Shirt",
     "gender": "male",
     "colors": ["#000"],
     "sizes": ["XS", "S"],
@@ -1527,7 +1527,7 @@
         "type": "image/png"
       }
     ],
-    "name": "White Shirt Black Pant",
+    "name": "White Shirt",
     "gender": "male",
     "colors": ["#000"],
     "sizes": ["XS", "S"],

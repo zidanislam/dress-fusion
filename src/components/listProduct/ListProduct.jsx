@@ -15,21 +15,14 @@ const ListProduct = ({ product, addToCart }) => {
           transition={{ duration: 0.4 }}
           className="border flex gap-6 justify-start rounded-2xl p-3"
         >
-          <img
-            className="lg:w-72 h-60 object-cover"
-            src={picture}
-            alt=""
-          />
+          <img className="lg:w-72 h-60 object-cover" src={picture} alt="" />
           <div className="my-2">
             <h2 className="text-xl font-semibold">{name}</h2>
             <p className="text-sm my-2 text-gray-800">{description}</p>
             <p className="text-lg">${price}</p>
-          <button
-            className="border-2 rounded-lg px-5 py-2 hover:bg-black hover:text-white hover:duration-300"
-            onClick={() => addToCart(product)}
-          >
-            Buy Now
-          </button>
+            <button className="2xl:text-base lg:text-sm md:text-sm text-indigo-700 hover:duration-300">
+              View Options
+            </button>
           </div>
         </motion.div>
       </Link>

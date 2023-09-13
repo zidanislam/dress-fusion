@@ -10,7 +10,7 @@ const FeaturedProducts = () => {
   const [activeCat, setActiveCat] = useState("all");
 
   const featured = useMemo(() => {
-   return products.filter((product) => product.featured === true);
+    return products.filter((product) => product.featured === true);
   }, [products]);
 
   useEffect(() => {
@@ -26,18 +26,19 @@ const FeaturedProducts = () => {
 
   return (
     <>
-      <div className="text-center 2xl:my-24 xl:my-24">
-        <h2 className="2xl:text-5xl xl:text-3xl lg:text-3xl mb-3 text-gray-800">
+      <div className="text-center 2xl:my-24 xl:my-24 px-6">
+        <h2 className="2xl:text-5xl xl:text-3xl md:text-3xl text-2xl mb-3 text-gray-800">
           New Arrivals
         </h2>
-        <p className="2xl:text-base xl:text-sm -mb-10 lg:mb-10 text-gray-700">
-          Check out our featured and most popular products. Grab Before It's Gone!!!
+        <p className="2xl:text-base md:text-sm text-xs xl:-mb-10 text-gray-700">
+          Check out our featured and most popular products. Grab Before It's
+          Gone!!!
         </p>
       </div>
       <FeaturedFilter setActiveCat={setActiveCat} activeCat={activeCat} />
       <motion.div
         layout
-        className="grid gap-3 mx-auto col-span-3 lg:grid-cols-3"
+        className="grid gap-3 mx-auto col-span-3 2xl:px-80 xl:px-32 lg:px-20 md:px-6 px-6 2xl:my-16 xl:my-10 md:my-10 my-7 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 grid-cols-2"
       >
         <AnimatePresence>
           {featuredFilter.map((product) => (
