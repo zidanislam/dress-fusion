@@ -25,7 +25,9 @@ const Product = ({ product }) => {
               <h2 className="2xl:text-base xl:text-base text-sm">{name}</h2>
               <p className="text-xs capitalize text-left">{category}</p>
             </div>
+            <div className=" md:block hidden">
             <StarRating ratings={ratings} />
+            </div>
           </div>
           <div className="flex justify-between lg:mt-10 md:mt-5">
             <p className="lg:text-lg md:text-sm md:font-semibold font-medium">${price}</p>

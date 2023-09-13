@@ -40,10 +40,10 @@ const ProductDetail = () => {
   const { addToCart } = useCartContext();
 
   return (
-    <div className="grid items-start grid-cols-2 mx-40 gap-12">
+    <div className="grid items-start md:grid-cols-2 2xl:px-80 xl:px-32 lg:px-20 md:px-6 px-6 gap-12">
       <ProductImage imgs={gellary} />
       <div>
-        <h2 className="text-3xl font-semibold">{name}</h2>
+        <h2 className="text-3xl font-semibold capitalize">{name}</h2>
         <p className="capitalize mb-5">
           <span className="text-base font-semibold">Category: </span>
           {category}
@@ -52,10 +52,10 @@ const ProductDetail = () => {
         <div className="flex align-middle gap-2 -mb-2">
           <p>Ratings: </p>
           <StarRating ratings={ratings} />
-          <p>({reviews} Reviews)</p>
+          <p className="md:text-xs">({reviews} Reviews)</p>
         </div>
-        <p className="my-6">{description}</p>
-        <p>In Stock: {stock} </p>
+        <p className="my-6 lg:text-base text-sm">{description}</p>
+        <p className=" lg:text-base text-sm">In Stock: {stock} </p>
         <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-400" />
         {stock > 0 && (
           <>

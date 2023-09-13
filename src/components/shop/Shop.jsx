@@ -12,8 +12,6 @@ const Shop = () => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [activeSize, setActivesize] = useState("all");
 
-  
-
   // Sorting functions
   const sortingFunctions = {
     "a-z": (a, b) => a.name.localeCompare(b.name),
@@ -60,10 +58,10 @@ const Shop = () => {
   });
 
   return (
-    <div className="grid grid-cols-7 lg:gap-5 md:gap-3 2xl:px-80 xl:px-32 lg:px-20 md:px-6 2xl:my-16 xl:my-10 lg:my-8">
+    <div className="grid md:grid-cols-7 lg:gap-5 md:gap-3 2xl:px-80 xl:px-32 lg:px-20 md:px-6 2xl:my-16 xl:my-10 lg:my-8">
       {/* Sidebar */}
       {/* Search section */}
-      <div className="col-span-2 top-0">
+      <div className="md:col-span-2 top-0 flex flex-col justify-center px-6">
         <input
           type="text"
           value={query}
@@ -72,10 +70,10 @@ const Shop = () => {
           onChange={(e) => setQuery(e.target.value)}
         />
         {/* End of search section */}
-        <div className="flex flex-col gap-5 my-12">
-          <div>
-            <p className="text-lg font-semibold">Categories</p>
-          </div>
+        <div className="mt-12">
+          <p className="text-lg font-semibold">Categories</p>
+        </div>
+        <div className="flex md:flex-col gap-5 my-4">
           {categories.map((category, index) => (
             <div
               className={`flex justify-between capitalize cursor-pointer ${
@@ -91,7 +89,7 @@ const Shop = () => {
         <div className="my-5">
           <p className="text-lg font-semibold">Sizes:</p>
         </div>
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-3 gap-2 mb-7">
           {sizes.map((size, index) => (
             <button
               key={index}
@@ -105,7 +103,7 @@ const Shop = () => {
           ))}
         </div>
       </div>
-      <div className="col-span-5">
+      <div className="md:col-span-5 md:px-0 px-6">
         <div className="flex align-middle justify-between mb-5">
           <div className="flex align-middle gap-2">
             <Squares2X2Icon
@@ -141,7 +139,9 @@ const Shop = () => {
         </div>
         <div
           className={
-            gridView ? "grid gap-2 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2" : "grid gap-5 lg:grid-cols-1"
+            gridView
+              ? "grid gap-2 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-2"
+              : "grid gap-5 lg:grid-cols-1"
           }
         >
           {filteredProducts.length === 0 ? (
@@ -152,13 +152,9 @@ const Shop = () => {
             filteredProducts.map((product) => (
               <div key={product._id}>
                 {gridView ? (
-                  <Product
-                    product={product}
-                  />
+                  <Product product={product} />
                 ) : (
-                  <ListProduct
-                    product={product}
-                  />
+                  <ListProduct product={product} />
                 )}
               </div>
             ))

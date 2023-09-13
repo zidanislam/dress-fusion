@@ -21,12 +21,12 @@ const CartProduct = ({
             <img src={picture} alt="" />
           </figure>
           <div>
-            <p className="text-base font-semibold">{name}</p>
+            <p className="md:text-base text-sm md:font-semibold font-medium">{name}</p>
             <div className="flex text-sm gap-2">
               <p>Size: </p>
               <button
                 disabled
-                className="text-xs px-2 py-1 rounded text-white bg-black"
+                className="text-xs md:px-2 md:py-1 px-1.5 py-0.5 rounded text-white bg-black"
               >
                 {selectedSize}
               </button>
@@ -34,19 +34,19 @@ const CartProduct = ({
           </div>
         </div>
         <p className="text-center my-auto lg:block hidden">{price}</p>
-        <div className="flex justify-center gap-6 align-middle my-auto">
+        <div className="flex justify-center md:gap-6 gap-2 align-middle my-auto">
           <button>
             <FaMinus
-              className="text-lg my-auto text-gray-700"
+              className="md:text-lg text-sm my-auto text-gray-700"
               onClick={() => handleDecrease(_id)}
             />
           </button>
-          <div className="text-center border rounded-lg border-gray-300 h-12 w-20">
-            <p className="text-lg mt-2">{amount}</p>
+          <div className="text-center border rounded-lg border-gray-300 md:h-12 md:w-20 h-10 w-12">
+            <p className="md:text-lg text-sm mt-2">{amount}</p>
           </div>
           <button>
             <FaPlus
-              className="text-lg my-auto text-gray-700"
+              className="md:text-lg text-sm my-auto text-gray-700"
               onClick={() => handleIncrease(_id)}
             />
           </button>

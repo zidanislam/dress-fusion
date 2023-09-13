@@ -18,7 +18,7 @@ const StarRating = ({ ratings }) => {
     }
   }
   return (
-    <div className=" flex align-middle gap-1 md:block hidden my-auto">
+    <div className=" flex align-middle gap-1 my-auto">
       <div className="star-rating lg:text-sm text-xs flex my-auto">{stars}</div>
       <p className="text-xs">({ratings})</p>
     </div>
