@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import ListProduct from "../listProduct/ListProduct";
 import Product from "../product/Product";
+import ShopFilter from "../shopFilter/ShopFilter";
 
 const Shop = () => {
   const [gridView, setGridView] = useState(true);
@@ -61,47 +62,18 @@ const Shop = () => {
     <div className="grid md:grid-cols-7 lg:gap-5 md:gap-3 2xl:px-80 xl:px-32 lg:px-20 md:px-6 2xl:my-16 xl:my-10 lg:my-8">
       {/* Sidebar */}
       {/* Search section */}
-      <div className="md:col-span-2 top-0 flex flex-col justify-center px-6">
-        <input
-          type="text"
-          value={query}
-          placeholder="Search..."
-          className="border-gray-400 rounded-lg border focus:outline-gray-500 p-2 md:w-4/5"
-          onChange={(e) => setQuery(e.target.value)}
+      <div className="md:col-span-2 top-0 md:block flex flex-col justify-center md:px-2 px-6">
+        <ShopFilter
+          setActiveCategory={setActiveCategory}
+          setActivesize={setActivesize}
+          setQuery={setQuery}
+          query={query}
+          activeCategory={activeCategory}
+          categories={categories}
+          sizes={sizes}
+          categoryAmount={categoryAmount}
+          activeSize={activeSize}
         />
-        {/* End of search section */}
-        <div className="mt-12">
-          <p className="text-lg font-semibold">Categories</p>
-        </div>
-        <div className="flex md:flex-col gap-5 my-4">
-          {categories.map((category, index) => (
-            <div
-              className={`flex justify-between capitalize cursor-pointer ${
-                activeCategory === category ? "font-bold" : ""
-              }`}
-              key={index}
-              onClick={() => setActiveCategory(category)}
-            >
-              {category} ({categoryAmount[category] || 0})
-            </div>
-          ))}
-        </div>
-        <div className="my-5">
-          <p className="text-lg font-semibold">Sizes:</p>
-        </div>
-        <div className="grid grid-cols-3 gap-2 mb-7">
-          {sizes.map((size, index) => (
-            <button
-              key={index}
-              onClick={() => setActivesize(size)}
-              className={`border border-slate-300 px-4 py-2 rounded-lg capitalize ${
-                activeSize === size ? "bg-black text-white" : ""
-              }`}
-            >
-              {size}
-            </button>
-          ))}
-        </div>
       </div>
       <div className="md:col-span-5 md:px-0 px-6">
         <div className="flex align-middle justify-between mb-5">

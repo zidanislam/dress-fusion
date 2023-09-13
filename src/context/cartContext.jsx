@@ -5,11 +5,15 @@ const CartContext = createContext();
 
 const getCartData = () => {
   let localData = localStorage.getItem("dressFusionCart");
-  if (localData.length === 0) {
-    return [];
-  } else {
-    return JSON.parse(localData);
-  }
+  //   if (localData.length === 0) {
+  //     return [];
+  //   } else {
+  //     return JSON.parse(localData);
+  //   }
+  // };
+  const parseData = JSON.parse(localData);
+  if (!Array.isArray(parseData)) return [];
+  return parseData;
 };
 const initialState = {
   cart: getCartData(),
