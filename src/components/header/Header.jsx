@@ -36,13 +36,13 @@ const Header = () => {
         >
           Shop
         </Link>
-        <Link
+        {/* <Link
           to="/about"
           className="2xl:mr-14 xl:mr-10 lg:mr-8 md:mr-4 text-base md:inline md:my-0 my-7 block"
           onClick={() => setOpen(!open)}
         >
           About
-        </Link>
+        </Link> */}
         <Link
           to="/cart"
           className="2xl:mr-14 xl:mr-10 lg:mr-8 md:mr-4 text-base md:inline md:my-0 my-7 block"
