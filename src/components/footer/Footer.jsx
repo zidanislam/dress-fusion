@@ -1,14 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <>
       <div className="grid md:grid-cols-2 2xl:px-80 xl:px-32 lg:px-20 md:px-6 px-3">
-        <img
-          className="xl:w-48 lg:w-40 md:w-32 w-48 md:m-0 m-auto"
-          src="https://i.ibb.co/RjzHvh3/DRESS.png"
-          alt="logo"
-        />
+        <Link to="/">
+          <img
+            className="xl:w-48 lg:w-40 md:w-32 w-48 md:m-0 m-auto"
+            src="https://i.ibb.co/RjzHvh3/DRESS.png"
+            alt="logo"
+          />
+        </Link>
         <div className="md:text-end text-center md:my-auto m-auto text-gray-600 xl:text-base lg:text-sm md:text-xs text-xs">
           <a href="#" className=" xl:mr-5 lg:mr-3 md:mr-2 mr-1.5">
             Support Center

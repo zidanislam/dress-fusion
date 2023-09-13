@@ -6,11 +6,13 @@ const Header = () => {
   let [open, setOpen] = useState(false);
   return (
     <nav className="grid grid-cols-3 mx-auto 2xl:px-80 xl:px-32 lg:px-20 md:px-6 px-6 2xl:my-16 xl:my-10 lg:my-8 md:my-5 my-5">
-      <img
-        className="w-48 col-span-1 -ml-2"
-        src="https://i.ibb.co/RjzHvh3/DRESS.png"
-        alt="logo"
-      />
+      <Link to="/">
+        <img
+          className="w-48 col-span-1 -ml-2"
+          src="https://i.ibb.co/RjzHvh3/DRESS.png"
+          alt="logo"
+        />
+      </Link>
       <div
         onClick={() => setOpen(!open)}
         className="text-3xl absolute right-8 top-7 cursor-pointer md:hidden"
