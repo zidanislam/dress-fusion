@@ -17,7 +17,7 @@ const ShopFilter = ({
         type="text"
         value={query}
         placeholder="Search..."
-        className="border-gray-400 rounded-lg border focus:outline-gray-500 p-2 md:w-4/5"
+        className="border-gray-400 md:rounded-lg rounded-md flex w-full border focus:outline-gray-500 p-2 md:w-4/5"
         onChange={(e) => setQuery(e.target.value)}
       />
       {/* End of search section */}

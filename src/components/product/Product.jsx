@@ -16,7 +16,7 @@ const Product = ({ product }) => {
       >
         <Link to={`/product/${_id}`}>
           <img
-            className="2xl:h-56 object-cover mx-auto mb-5 rounded-lg"
+            className="2xl:h-56 object-cover mx-auto mb-5 md:rounded-lg rounded-md"
             src={picture}
             alt=""
           />
