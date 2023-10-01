@@ -9,7 +9,7 @@ const InstaFeed = () => {
           Find out more about our products and our newest updates in worlds most populas social platform.
         </p>
       </div>
-      <div className="flex flex-wrap md:gap-0 gap-2 place-items-center justify-center">
+      <div className="flex md:flex-nowrap md:overflow-hidden flex-wrap md:gap-0 gap-2 place-items-center justify-center">
         <img
           src="https://i.ibb.co/b73h34G/insta-1.png"
           className="2xl:w-80 xl:w-56 lg:w-40 md:w-32 w-28"
