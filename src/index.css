@@ -1,5 +1,9 @@
 :root {
-  font-family: "poppins";
+  font-family: "Poppins", sans-serif;
+  src: url("./fonts/poppins-regular-webfont.woff2") format("woff2"),
+    url("./fonts/poppins-regular-webfont.woff") format("woff"),
+    url("./fonts/poppins-bold-webfont.woff") format("woff"),
+    url("./fonts/poppins-bold-webfont.woff2") format("woff2");
   line-height: 1.5;
   font-weight: 400;
 
