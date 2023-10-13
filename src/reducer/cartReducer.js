@@ -47,7 +47,7 @@ const cartReducer = (state, action) => {
     let updatedProduct = state.cart.map((product) => {
       if (product._id === action.payload) {
         let decAmount = product.amount - 1;
-        if (decAmount < 0) {
+        if (decAmount < 1) {
           decAmount = 1;
         }
         return {

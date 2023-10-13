@@ -52,7 +52,7 @@ const CartPage = () => {
         <div className="lg:col-span-2 col-span-3 bg-slate-100 p-8">
           <div className="grid grid-cols-2 mb-1">
             <h4 className="text-lg">Subtotal:</h4>
-            <p>$ {total_price.toFixed(2)}</p>
+            <p>$ {Number(total_price).toFixed(2)}</p>
           </div>
           <div className="grid grid-cols-2 mb-1">
             <h4 className="text-lg">Shipping:</h4>
@@ -66,7 +66,7 @@ const CartPage = () => {
           <div className="grid grid-cols-2 gap-2 mb-1">
             <h4 className="lg:text-xl text-lg lg:font-semibold font-medium">Order Total:</h4>
             <p className="text-xl font-semibold">
-              $ {(total_price + shipping + tax).toFixed(2)}
+              $ {Number(total_price + shipping + tax).toFixed(2)}
             </p>
           </div>
         </div>
